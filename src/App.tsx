@@ -4,7 +4,6 @@ import { photoTexts } from './data/photoTexts'
 // Dynamically import all images and videos from the journey folder
 const mediaModules = import.meta.glob('/src/assets/journey/**/*.{jpg,jpeg,png,webp,JPG,mp4,webm,mov,ogg}', { eager: true }) as Record<string, { default: string }>;
 
-// LocalStorage key for custom captions
 const CAPTIONS_STORAGE_KEY = 'journey-photo-captions';
 
 interface FileInfo {
